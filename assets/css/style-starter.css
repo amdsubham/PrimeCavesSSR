@@ -14023,10 +14023,10 @@ a.text-dark:focus {
 }
 
 :root {
-  --primary-color: #fb5607;
+  --primary-color: #deac47;
   --yellow-color: #ffbe0b;
   --pink-color: #ff006e;
-  --blue-color-1: #3a86ff;
+  --blue-color-1: #deac47;
   --blue-color-2: #002766;
   --dark-color: #121725;
   --green-color: #7bd88a;
@@ -14047,7 +14047,7 @@ a.text-dark:focus {
 }
 
 [data-theme="dark"] {
-  --primary-color: #fb5607;
+  --primary-color: #deac47;
   --yellow-color: #ffbe0b;
   --pink-color: #ff006e;
   --blue-color-1: #3a86ff;
@@ -14899,7 +14899,6 @@ a.navbar-brand img {
 
 /*--/banner--*/
 .w3l-banner {
-  margin-top: 90px;
   background: var(--bg-color);
 }
 
