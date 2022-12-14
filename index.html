@@ -48,7 +48,8 @@
             </ul>
             <ul class="navbar-nav search-right mt-lg-0 mt-2">
               <li class="mx-3">
-                <a href="#btn" class="btn btn-style btn-primary">Get Started</a>
+                <a href="#btn" class="btn btn-style btn-primary" data-toggle="modal" data-target="#exampleModal">Get
+                  Started</a>
               </li>
 
             </ul>
@@ -83,7 +84,7 @@
             <p class="mt-3">The most effective society management application</p>
             <a href="#btn" class="btn btn-style btn-primary mt-lg-5 mt-4 mr-2" data-toggle="modal"
               data-target="#exampleModal">Get Demo Now <span class="fa fa-arrow-right  ml-3"></a>
-            <a href="#btn" class="btn btn-style btn-outline-dark mt-lg-5 mt-4">Contact Us <span
+            <a href="contact.html" class="btn btn-style btn-outline-dark mt-lg-5 mt-4">Contact Us <span
                 class="fa fa-arrow-right  ml-3"></a>
           </div>
           <div class="col-lg-6 text-center mt-lg-0 mt-md-5 mt-4">
@@ -119,9 +120,8 @@
           <div class="area-box icon-pink">
             <img src="assets/images/primecaves_erp.svg" alt="" class="img-fluid">
             <h4><a href="#feature" class="title-head">Primecaves ERP</a></h4>
-            <p>This app is an all-inclusive solution that makes apartment living more
-              convenient than ever before. Residents can pay rent, unlock doors, swap keys, and engage with their
-              neighbours, among other capabilities.</p>
+            <p>As an Association member, Community / Society Head, this module will help you to manage all Units & Users
+              data from one view! Send reminder and alerts to all Owners, Tenants and manage access of all users</p>
 
           </div>
         </div>
@@ -163,7 +163,7 @@
                 reminder every month.</p>
             </div>
             <div class="subscribe-cat-gd">
-              <a href="#" class="subscribe-cat-link">Communication and connectivity</a>
+              <a href="#" class="subscribe-cat-link">Communication and Connectivity</a>
               <p class="mt-2">Easily welcome new residents and talk to people in real time. Imagine what a
                 well connected community could do.</p>
             </div>
@@ -200,8 +200,9 @@
                   </div>
                 </div>
                 <div class="col-sm-9 content4-right-info pl-4">
-                  <h6><a href="#url">Buy a new home</a></h6>
-                  <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere.</p>
+                  <h6><a href="#url">We focus on solutions</a></h6>
+                  <p>For us, it’s all about what adds value for our users. Above all, we want our words to
+                    work for you.</p>
                 </div>
               </div>
             </div>
@@ -215,8 +216,9 @@
                   </div>
                 </div>
                 <div class="col-sm-9 content4-right-info pl-4">
-                  <h6><a href="#url">See a home</a></h6>
-                  <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere.</p>
+                  <h6><a href="#url"> Fast service is crucial.</a></h6>
+                  <p>We consult with society and apartments to ensure that the required forthcoming
+                    provides them with the best usecase.</p>
                 </div>
               </div>
             </div>
@@ -247,7 +249,7 @@
       <div class="row mt-5">
         <div class="col-lg-6">
           <div class="faq-image">
-            <img src="assets/images/9.jpg" class="img-fluid" alt="">
+            <img src="assets/images/primecaves_faq.svg" class="img-fluid" alt="">
           </div>
         </div>
         <div class="col-lg-6 mt-lg-0 mt-5 pl-lg-5">
@@ -396,36 +398,52 @@
     </div>
   </section>
   <!-- //footer17 -->
+
   <!-- //modal -->
-  <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="contact-right">
-      <form
-        action="https://script.google.com/macros/s/AKfycbw22KtGHeFFaSv0h2tnNjUc8oqj-HoBKzsrRHqLI_C6wMmm78Cx9LwqFt-tcmR3oEWF/exec"
-        method="post" class="signin-form">
-        <div class="input-grids">
-          <input type="text" name="w3lName" id="w3lName" placeholder="Your Name*" class="contact-input" required="" />
-          <input type="email" name="w3lSender" id="w3lSender" placeholder="Your Email*" class="contact-input"
-            required="" />
-          <input type="text" name="w3lSubect" id="w3lSubect" placeholder="Subject*" class="contact-input" required="" />
-        </div>
-        <div class="form-input">
-          <textarea name="w3lMessage" id="w3lMessage" placeholder="Type your message here*" required=""></textarea>
-        </div>
-        <div style="display: flex;justify-content: space-between;">
-          <button class=" btn btn-style btn-primary" data-dismiss="modal">Close</button>
-          <div class="form-buttonhny text-lg-right">
-            <button class="btn btn-style btn-primary">Send Message</button>
+  <div class="contact-grids">
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="contact-right">
+        <form method="post" class="gform">
+          <div class="input-grids">
+            <input type="text" name="name" id="name" placeholder="Your Name*" class="contact-input" required="" />
+            <input type="email" name="email" id="email" placeholder="Your Email*" class="contact-input" required="" />
+            <input type="phone" name="phoneNo" id="phoneNo" placeholder="Your Phone No*" class="contact-input"
+              required="" />
           </div>
-        </div>
-      </form>
+          <div class="form-input">
+            <textarea name="message" id="message" placeholder="Type your message here*" required=""></textarea>
+          </div>
+          <div style="display: flex;justify-content: space-between;">
+            <button class=" btn btn-style btn-primary" data-dismiss="modal">Close</button>
+            <div class="form-buttonhny text-lg-right">
+              <button class="btn btn-style btn-primary">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
+
+  <!-- Toast -->
+  <div id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="mr-auto">Tring Tring..</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Request successfully submitted. our team will get in touch with you soon.
+    </div>
+  </div>
+
   <!-- Template JavaScript -->
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
   <!-- owlcarousel -->
   <script src="assets/js/owl.carousel.js"></script>
+
   <!-- script for tesimonials carousel slider -->
   <script>
     $(document).ready(function () {
@@ -447,7 +465,6 @@
       })
     })
   </script>
-  <!-- //script for tesimonials carousel slider -->
 
   <!-- script for tesimonials agency carousel slider -->
   <script>
@@ -511,6 +528,7 @@
   <!--//MENU-JS-->
 
   <script src="assets/js/bootstrap.min.js"></script>
+  <script data-cfasync="false" src="./assets/js/form-submission-handler.js"></script>
 </body>
 
 </html>
